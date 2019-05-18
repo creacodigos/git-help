@@ -4,6 +4,7 @@
 - Buenas prácticas mensajes commit: https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_es-AR.md
 - Gitmoji: https://github.com/carloscuesta/gitmoji
 - Dudas: http://programandonet.com/questions/75/git-push-requiere-nombre-de-usuario-y-contrasena
+- Primera contribución: https://github.com/firstcontributions/first-contributions/blob/master/translations/README.es.md
 - Autogenerador .gitignore: https://gitignore.io
 
 ## Iniciar
