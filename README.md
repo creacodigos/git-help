@@ -1,6 +1,9 @@
 # Chuleta de Comandos de GIT
 
 - https://git-scm.com/book/es/v1/Empezando-Configurando-Git-por-primera-vez
+- Buenas prácticas mensajes commit: https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_es-AR.md
+- Gitmoji: https://github.com/carloscuesta/gitmoji
+- Dudas: http://programandonet.com/questions/75/git-push-requiere-nombre-de-usuario-y-contrasena
 - Autogenerador .gitignore: https://gitignore.io
 
 ## Iniciar
