@@ -39,6 +39,11 @@ Definiendo <strong>identidad en repositorio específico</strong>:
 
     git config github.user usergithub
     
+    
+## Credenciales
+    
+https://git-scm.com/book/es/v2/Herramientas-de-Git-Almacenamiento-de-credenciales
+
 Forzar introducir <strong>usuario y contraseña</strong>:
 Útil para cambiar de usuario
 
