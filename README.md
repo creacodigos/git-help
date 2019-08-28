@@ -10,6 +10,17 @@
 ## Iniciar
 
     git init
+    
+### Crear repositorio y vincular remoto
+
+```
+echo "# Comit inicial" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/creacodigos/nombreRepositorio.git
+git push -u origin master
+```
 
 <strong>Añadir</strong> repositiorio remoto: (origin es el nombre por defecto)
 
