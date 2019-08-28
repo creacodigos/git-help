@@ -24,7 +24,7 @@ git push -u origin master
 
 <strong>Añadir</strong> repositiorio remoto: (origin es el nombre por defecto)
 
-    git remote add origin https://github.com/tollelle/repositorio.git
+    git remote add origin https://github.com/creacodigos/repositorio.git
 
 <strong>Listar</strong> repositorio remoto:
 
@@ -32,7 +32,7 @@ git push -u origin master
 
 <strong>Modificar</strong> repositorio remoto
 
-    git remote set-url origin https://github.com/tollelle/nuevoRepositorio.git
+    git remote set-url origin https://github.com/creacodigos/nuevoRepositorio.git
 
 Definiendo <strong>identidad</strong> global:
 
@@ -78,15 +78,15 @@ Forzar introducir <strong>usuario y contraseña</strong>:
 
 <strong>Clonado</strong> repositorio en carpeta actual con directorio grit
 
-    git clone git://github.com/schacon/grit.git
+    git clone git://github.com/creacodigos/grit.git
 
 <strong>Clonando</strong> repositorio y rama específica
 
-    git clone -b RAMA it://github.com/schacon/grit.git
+    git clone -b RAMA it://github.com/creacodigos/grit.git
 
 <strong>Clonando</strong> repositorio en carpeta definida
 
-    git clone git://github.com/schacon/grit.git carpeta
+    git clone git://github.com/creacodigos/grit.git carpeta
 
 
 ## Info
