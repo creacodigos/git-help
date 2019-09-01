@@ -7,7 +7,48 @@
 - Primera contribución: https://github.com/firstcontributions/first-contributions/blob/master/translations/README.es.md
 - Autogenerador .gitignore: https://gitignore.io
 
-## Iniciar
+## GIT FTP:
+
+## Install
+
+https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md#macos
+```
+brew install git
+brew install brotli
+brew install git-ftp
+```
+
+### Setup
+
+https://github.com/git-ftp/git-ftp
+```
+git config git-ftp.url "ftp://ftp.creacodigos.com:21"
+git config git-ftp.user "coinffeine@creacodigos.com"
+git config git-ftp.password "secr3t"
+```
+
+### Upload all files
+```
+git ftp init
+```
+
+### Or if the files are already there
+```
+git ftp catchup
+```
+
+### Work and deploy
+```
+echo "new content" >> index.txt
+git commit index.txt -m "Add new content"
+git ftp push
+# 1 file to sync:
+# [1 of 1] Buffered for upload 'index.txt'.
+# Uploading ...
+# Last deployment changed to ded01b27e5c785fb251150805308d3d0f8117387.
+```
+
+## Iniciar GIT
 
     git init
     
