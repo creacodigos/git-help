@@ -23,7 +23,7 @@ brew install git-ftp
 https://github.com/git-ftp/git-ftp
 ```
 git config git-ftp.url "ftp://ftp.creacodigos.com:21"
-git config git-ftp.user "coinffeine@creacodigos.com"
+git config git-ftp.user "ftpuser@creacodigos.com"
 git config git-ftp.password "secr3t"
 ```
 
