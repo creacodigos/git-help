@@ -103,15 +103,19 @@ Forzar introducir <strong>usuario y contraseña</strong>:
 
 ## Monitorizar
 
-<strong>Escuchando</strong> cambios de todo
+<strong>Añadir</strong> cambios de todo
 
     git add . 
 
-<strong>Escuchando</strong> cambios de archivo
+<strong>Añadir</strong> cambios de archivo
 
     git add README
+    
+<strong>Ignorar </strong> cambios de archivo
 
-<strong>Confirmar</strong> cambios y <strong>Commit</strong> inicial
+    git checkout -- config.php
+
+<strong>Commit</strong> del últimos cambios añadidos
 
     git commit –m 'versión inicial del proyecto'
 
@@ -145,6 +149,14 @@ Ver lo que has <strong>modificado</strong> pero aún no has preparado
     git commit --amend
 
 ## Repositorios 
+
+<strong>Actualizar</strong> tu repositorio local al commit más nuevo, ejecuta
+
+    git pull
+    
+<strong>Fusionar</strong> otra rama a tu rama activa (por ejemplo master), utiliza
+    
+    git merge <branch>
 
 <strong>Mostrando</strong> repositorios remotos definidos:
 
