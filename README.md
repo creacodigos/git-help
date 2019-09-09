@@ -63,6 +63,25 @@ git remote add origin https://github.com/creacodigos/nombreRepositorio.git
 git push -u origin master
 ```
 
+### Crear repositorio local en carpeta actual
+    git init
+    git config receive.denyCurrentBranch ignore
+    git add .
+    git commit -m "initial"
+    git branch test
+    git checkout test
+
+### Clonas repositorio en carpeta local
+    git clone /home/xx/
+    git pull
+
+### Agregar cambios y crear mensaje
+    git add .
+    git commit -m "First change"
+
+### Enviar cambios al repositorio
+    git push origin test
+
 <strong>Añadir</strong> repositiorio remoto: (origin es el nombre por defecto)
 
     git remote add origin https://github.com/creacodigos/repositorio.git
