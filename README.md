@@ -54,14 +54,12 @@ git ftp push
     
 ### Crear repositorio y vincular remoto
 
-```
-echo "# Comit inicial" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/creacodigos/nombreRepositorio.git
-git push -u origin master
-```
+    echo "# Comit inicial" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/creacodigos/nombreRepositorio.git
+    git push -u origin master
 
 ### Crear repositorio local en carpeta actual
     git init
@@ -94,20 +92,16 @@ git push -u origin master
 
     git remote set-url origin https://github.com/creacodigos/nuevoRepositorio.git
 
-Definiendo <strong>identidad</strong> global:
+Definiendo <strong>identidad</strong> global o local:
 
-    git config --global user.name "Jorge"
-    
-    git config --global user.email "correo@correo.com"
-
-    git config --global github.user usergithub
+    git config (--global|--local) user.name "Jorge"    
+    git config (--global|--local) user.email "correo@correo.com"
+    git config (--global|--local) github.user usergithub
     
 Definiendo <strong>identidad en repositorio específico</strong>:
 
-    git config user.name "Jorge"
-    
+    git config user.name "Jorge"    
     git config user.email "correo@correo.com"
-
     git config github.user usergithub
     
     
@@ -116,9 +110,17 @@ Definiendo <strong>identidad en repositorio específico</strong>:
 https://git-scm.com/book/es/v2/Herramientas-de-Git-Almacenamiento-de-credenciales
 
 Forzar introducir <strong>usuario y contraseña</strong>:
-Útil para cambiar de usuario
+De forma global o local:
 
-    git config --local credential.helper ""
+    git config (--global|--local) credential.helper ""
+
+<strong>Almacenar</strong> usuario y contraseña global o local:
+
+    git config (--global|--local) credential.helper store
+
+<strong>Definir tiempo de exipración</strong> de almacenamiento de usuario y contraseña:
+
+    git config (--global|--local) credential.helper 'cache --timeout=3600'
 
 ## Monitorizar
 
@@ -220,7 +222,6 @@ Ver lo que has <strong>modificado</strong> pero aún no has preparado
 <strong>Fusionar</strong> ramas a master con merge
 
     git checkout master
-
     git merge nuevaRAMA
 
 
@@ -246,7 +247,6 @@ Mostrar <strong>listado</strong> de ramas del repositorio
 <strong>Publicando</strong> desde rama actual
 
     git push (remoto) (rama)
-
     git push origin master
 
 
@@ -256,10 +256,21 @@ Mostrar <strong>listado</strong> de ramas del repositorio
 
 <strong>Deshacer</strong> cambios locales y commits y sincronizar con repositorio remoto
     
-    git fetch origin
-    
+    git fetch origin    
     git reset --hard origin/master
 
+# Reparaciones
+
+## Limpiar la caché, añadir todo, comentas y publicar
+
+    git rm -r --cached .
+    git add .
+    git commit -am 'git cache cleared'
+    git push
+
+## Revertir la última confirmación
+
+    git reset HEAD^ --hard
 ---
 
 ## Buenas prácticas mensajes commit
