@@ -7,7 +7,7 @@
 - Primera contribución: https://github.com/firstcontributions/first-contributions/blob/master/translations/README.es.md
 - Autogenerador .gitignore: https://gitignore.io
 
-## GIT FTP:
+# GIT FTP:
 
 ## Install
 
@@ -48,7 +48,7 @@ git ftp push
 # Last deployment changed to ded01b27e5c785fb251150805308d3d0f8117387.
 ```
 
-## Iniciar GIT
+# Iniciar GIT
 
     git init
     
@@ -72,6 +72,10 @@ git ftp push
 ### Clonas repositorio en carpeta local
     git clone /home/xx/
     git pull
+
+### Traer todo a rama local de remoto
+
+`git pull --allow-unrelated-histories origin master`
 
 ### Agregar cambios y crear mensaje
     git add .
