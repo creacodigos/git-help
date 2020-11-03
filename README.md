@@ -102,6 +102,13 @@ Definiendo <strong>identidad</strong> global o local:
     git config (--global|--local) user.email "correo@correo.com"
     git config (--global|--local) github.user usergithub
     
+    
+Obteniendo <strong>identidad</strong> global o local:
+
+    git config (--global|--local) user.name    
+    git config (--global|--local) user.email
+    git config (--global|--local) github.user
+    
 Definiendo <strong>identidad en repositorio específico</strong>:
 
     git config user.name "Jorge"    
